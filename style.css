@@ -144,7 +144,7 @@ body {
 .mobile-nav ul li a {
     color: rgb(7, 7, 7);
     text-decoration: none;
-    display: none;
+    display: block;
     margin: 10px;
 }
 
@@ -569,6 +569,7 @@ body {
 
     .hamburger {
         display: block;
+        z-index:11;
 
     }
 
@@ -623,6 +624,8 @@ body {
     .video-container{
         width: 100%;
     }
+
+    .
 }
 
 @media only screen and (max-width: 768px) {
