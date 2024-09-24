@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- carousel -->
+   
 </head>
-
 
 <body>
 
@@ -216,14 +217,27 @@
                     menu
                 </span>
             </div>
-
-            </div>
-
+            
             <div class="mobile-nav" id="mobile-nav">
                 <ul>
-                    <li><a href="#">Use Cases</a></li>
+                    <li>
+                        <a href="#">Use Cases</a>
+                        <span class="material-symbols-outlined accordion-icon" id="use-cases-icon">expand_more</span>
+                        <ul class="accordion-content" id="use-cases-content">
+                            <li><a href="#">Feature 1</a></li>
+                            <li><a href="#">Feature 2</a></li>
+                            <li><a href="#">Feature 3</a></li>
+                        </ul>
+                    </li>
                     <hr>
-                    <li><a href="#">For Business</a></li>
+                    <li>
+                        <a href="#">For Business</a>
+                        <span class="material-symbols-outlined accordion-icon" id="business-icon">expand_more</span>
+                        <ul class="accordion-content" id="business-content">
+                            <li><a href="#">Plan 1</a></li>
+                            <li><a href="#">Plan 2</a></li>
+                        </ul>
+                    </li>
                     <hr>
                     <li><a href="#">Resources</a></li>
                     <hr>
@@ -237,7 +251,10 @@
                     </ul>
                 </ul>
             </div>
+            
+
         </nav>
+
     </header>
 
     <!-- video section -->
@@ -403,25 +420,544 @@
                 </span>
                 <div class="recording-text">
                     <h2 class="recording-subheading">Lightning fast screen recording</h2>
-                    Easily <a href="#" class="link-record-screen">record your screen and camera</a>. Record on any device using Loom’s <a
-                        href="#" class="link-chrome-extension">Chrome extension</a> desktop app or <a href="#" class="link-mobile-app">mobile app</a>.
+                    Easily <a href="#" class="link-record-screen">record your screen and camera</a>. Record on any
+                    device using Loom’s <a href="#" class="link-chrome-extension">Chrome extension</a> desktop app or <a
+                        href="#" class="link-mobile-app">mobile app</a>.
                     <a href="#" class="btn btn-download">Download now</a>
                 </div>
             </div>
             <div class="video-container">
-                <video class="video-player" controls autoplay loop muted playsinline >
+                <video class="video-player" controls autoplay loop muted playsinline>
                     <source src="https://cdn.loom.com/assets/marketing/bubbs/angelina.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
     </section>
-    
 
-    <footer>
-        <!-- Footer section -->
+
+
+    <!-- Section 5 -->
+
+    <section class="section-5">
+        <h2 class="section-title">So much more than a screen recorder</h2>
+        <div class="content-wrapper">
+            <div class="text-content">
+                <span class="material-symbols-outlined icon-edit">
+                    edit
+                </span>
+                <h2 class="edit-heading">Record once, edit effortlessly</h2>
+                <p class="edit-description">Outsmart the undo button. Instead of restarting,
+                    rewind while you're still recording to get the
+                    perfect take. After recording, dial in your video by
+                    trimming words from its transcript. With Loom,
+                    editing video is as easy as editing a text.</p>
+                <a href="#" class="btn-record-now">Record now <span class="material-symbols-outlined arrow-icon">
+                        arrow_forward
+                    </span></a>
+            </div>
+            <div class="video-container">
+                <video class="thd-rounded-int" loop muted playsinline autoplay>
+                    <source type="video/webm" src="https://cdn.loom.com/assets/marketing/home/live-rewind.webm">
+                    <source type="video/mp4" src="https://cdn.loom.com/assets/marketing/home/live-rewind.mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 6 -->
+
+    <section class="section-6">
+        <div class="image-container">
+            <picture>
+                <source srcset="https://cdn.loom.com/assets/marketing/home/screen.webp" type="image/webp">
+                <img class="responsive-image" alt="Loom screen integration" loading="lazy" width="860" height="512"
+                    decoding="async"
+                    srcset="/_next/image?url=https%3A%2F%2Fcdn.loom.com%2Fassets%2Fmarketing%2Fhome%2Fscreen.jpg&amp;w=1080&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.loom.com%2Fassets%2Fmarketing%2Fhome%2Fscreen.jpg&amp;w=1920&amp;q=75 2x"
+                    src="/_next/image?url=https%3A%2F%2Fcdn.loom.com%2Fassets%2Fmarketing%2Fhome%2Fscreen.jpg&amp;w=1920&amp;q=75">
+            </picture>
+        </div>
+        <div class="text-container">
+            <h2 class="section-heading">
+                Share or embed video anywhere you work
+            </h2>
+            <p class="section-description">From Google Workspace to Slack, Loom videos seamlessly integrate with
+                hundreds of tools you use every day.</p>
+            <a href="#" class="cta-link">
+                Start sharing <span class="material-symbols-outlined arrow-icon">
+                    arrow_forward
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section 8 -->
+
+    <section class="section-7">
+        <div class="text-container">
+            <h2 class="section-heading">Engage and connect with video</h2>
+            <p class="section-description">
+                Easily collaborate by adding emojis, comments, tasks and CTAs to your video message. Empower remote
+                teams to communicate better across timezones using transcripts and captions in 50+ languages.
+            </p>
+            <a href="#" class="cta-link">Connect over video
+                <span class="material-symbols-outlined arrow-icon">arrow_forward</span>
+            </a>
+        </div>
+        <div class="media-wrapper">
+            <video class="video-element" loop muted playsinline autoplay>
+                <source type="video/mp4" src="https://cdn.loom.com/assets/marketing/home/hero-bubb.mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- section 9 -->
+
+    <section class="section-9 content-safety">
+        <div class="content-wrapper-9">
+            <h2 class="section-heading">Keep your content safe</h2>
+            <p class="section-description">
+                Enterprise-grade security to keep your data and your customer’s data private and secure. We offer SSO,
+                SCIM as well as custom data retention policies and privacy settings.
+            </p>
+            <a href="#" class="learn-more-link">Learn more</a>
+        </div>
+    </section>
+
+
+    <!-- Section 10  -->
+
+    <section class="section-10">
+        <h2>Video messaging for all use cases</h2>
+        <div class="use-case-cards">
+            <div class="card sales-card">
+                <img alt="" loading="lazy"
+                    src="https://cdn.sanity.io/images/pvn35iyy/production/1fbc589ca61c81668ab593338e1574803b244594-582x480.jpg">
+                <h5>Sales</h5>
+                <p>Personalize your pitch with video outreach to close more deals.</p>
+            </div>
+            <div class="card engineering-card">
+                <img alt="" loading="lazy"
+                    src="https://cdn.sanity.io/images/pvn35iyy/production/0f64f6e8166dba475a323d474d9760efc9fcd093-580x480.jpg">
+                <h5>Engineering</h5>
+                <p>Add visual context to your code to accelerate your sprints.</p>
+            </div>
+            <div class="card support-card">
+                <img alt="" loading="lazy"
+                    src="https://cdn.sanity.io/images/pvn35iyy/production/7398089afbd2eb07a0a9ae57683cc6b1579b2b65-580x480.jpg">
+                <h5>Customer support</h5>
+                <p>Troubleshoot over video to reach resolutions faster.</p>
+            </div>
+            <div class="card design-card">
+                <img alt="" loading="lazy"
+                    src="https://cdn.sanity.io/images/pvn35iyy/production/9351d769309a81c96600ccca75914e94ac6a9c91-580x480.jpg">
+                <h5>Design</h5>
+                <p>Share ideas and provide feedback over video to enhance designs.</p>
+            </div>
+        </div>
+        <a href="#">See all use cases</a>
+    </section>
+
+
+    <!-- Section 11 -->
+
+    <section class="section-11">
+        <h2 class="features-heading">Powerful features for easy, custom recordings</h2>
+        <div class="features-wrapper">
+            <div class="features-column">
+                <ul class="feature-item">
+                    <span class="material-symbols-outlined check-icon">check</span>
+                    <li>Screen and camera recording</li>
+                </ul>
+                <ul class="feature-item">
+                    <span class="material-symbols-outlined check-icon">check</span>
+                    <li>Trim and stitch video clips</li>
+                </ul>
+                <ul class="feature-item">
+                    <span class="material-symbols-outlined check-icon">check</span>
+                    <li>Transcriptions and closed captions</li>
+                </ul>
+                <ul class="feature-item">
+                    <span class="material-symbols-outlined check-icon">check</span>
+                    <li>Custom background</li>
+                </ul>
+            </div>
+            <div class="features-column">
+                <ul class="feature-item">
+                    <span class="material-symbols-outlined check-icon">check</span>
+                    <li>Easy sharing and embedding</li>
+                </ul>
+                <ul class="feature-item">
+                    <span class="material-symbols-outlined check-icon">check</span>
+                    <li>Download and upload</li>
+                </ul>
+                <ul class="feature-item">
+                    <span class="material-symbols-outlined check-icon">check</span>
+                    <li>Video privacy controls</li>
+                </ul>
+                <ul class="feature-item">
+                    <span class="material-symbols-outlined check-icon">check</span>
+                    <li>Video and viewer insights</li>
+                </ul>
+            </div>
+        </div>
+        <a href="/" class="features-link">See all features</a>
+    </section>
+
+    <!-- section 12 -->
+
+    <section class="section-12">
+        <div class="blog-section-wrapper">
+            <p class="blog-heading">FROM OUR BLOG</p>
+            <h1 class="blog-title">How to use async video messaging to improve communication</h1>
+            <div class="blog-cards-container">
+                <div class="blog-card">
+                    <h3 class="blog-card-title">
+                        When to Choose Synchronous Vs. Asynchronous Communication
+                    </h3>
+                    <p class="blog-card-description">
+                        This guide explores the intricacies of sync vs. async communication, helps you decide which is
+                        the best for your workflow, and introduces how screen recording like Loom bridges the gap
+                        between these communication styles.
+                    </p>
+                    <a href="/" class="blog-card-link">Read the article
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="blog-card">
+                    <h3 class="blog-card-title">
+                        Let Loom AI Do the Work: Say Goodbye to Manual Documentation
+                    </h3>
+                    <p class="blog-card-description">
+                        With new Loom Al workflows, you turn any Loom into a written doc to draft SOPs, file Jira
+                        tickets, and more.
+                    </p>
+                    <a href="/" class="blog-card-link">Read the article
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+            <button class="blog-button">Explore our blog</button>
+        </div>
+    </section>
+
+
+    <!-- section 13 -->
+
+    <section class="section-13">
+        <div class="main-enterprise">
+            <div class="enterprise-info-wrapper">
+                <div class="enterprise-text">
+                    <h2 class="enterprise-heading">Loom for Enterprise</h2>
+                    <p class="enterprise-description">Loom for Enterprise helps teams securely manage and organize async
+                        video communication at scale</p>
+                </div>
+                <a href="#" class="enterprise-learn-more">
+                    <span class="material-symbols-outlined">share_windows</span> Learn more
+                </a>
+            </div>
+            <div class="enterprise-image-wrapper">
+                <img src="./images/section-13.jpg" alt="Enterprise image" class="enterprise-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- section 14 testmonial -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <!-- First Testimonial -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="testimonial-card card-1">
+                                    <img class="logo-img-testmonial" src="./images/marquee/12.svg" alt="img">
+                                    <p>"Loom allows me to connect more personally with people without having to do 75
+                                        different one-on-one calls, which is just impossible at scale."</p>
+                                    <div class="testimonial-author">
+                                        <img src="https://cdn.sanity.io/images/pvn35iyy/production/b51f9779f1e1e2422ed56403f6ee9f557e2d5935-400x456.webp?auto=format&w=64&dpr=2"
+                                            alt="Jon Deo">
+                                        <span>Jon Deo</span>
+                                        <span>CEO</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second Testimonial -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="testimonial-card card-2">
+                                    <img class="logo-img-testmonial" src="./images/marquee/12.svg" alt="img">
+                                    <p>"My teammates and I love using Loom; it saved us hundreds of hours by creating
+                                        informative video tutorials instead of one-on-one trainings with customers."</p>
+                                    <div class="testimonial-author">
+                                        <img src="https://cdn.sanity.io/images/pvn35iyy/production/b51f9779f1e1e2422ed56403f6ee9f557e2d5935-400x456.webp?auto=format&w=64&dpr=2"
+                                            alt="Erica Goodell">
+                                        <span>Erica Goodell</span>
+                                        <span>Customer Success, Pearson</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="testimonial-card card-3">
+                                    <img class="logo-img-testmonial" src="./images/marquee/12.svg" alt="img">
+                                    <p>"My teammates and I love using Loom; it saved us hundreds of hours by creating
+                                        informative video tutorials instead of one-on-one trainings with customers."</p>
+                                    <div class="testimonial-author">
+                                        <img src="https://cdn.sanity.io/images/pvn35iyy/production/b51f9779f1e1e2422ed56403f6ee9f557e2d5935-400x456.webp?auto=format&w=64&dpr=2"
+                                            alt="Erica Goodell">
+                                        <span>Erica Goodell</span>
+                                        <span>Customer Success, Pearson</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="testimonial-card">
+                                    <img class="logo-img-testmonial" src="./images/marquee/12.svg" alt="img">
+                                    <p>"My teammates and I love using Loom; it saved us hundreds of hours by creating
+                                        informative video tutorials instead of one-on-one trainings with customers."</p>
+                                    <div class="testimonial-author">
+                                        <img src="https://cdn.sanity.io/images/pvn35iyy/production/b51f9779f1e1e2422ed56403f6ee9f557e2d5935-400x456.webp?auto=format&w=64&dpr=2"
+                                            alt="Erica Goodell">
+                                        <span>Erica Goodell</span>
+                                        <span>Customer Success, Pearson</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="testimonial-card card-5">
+                                    <img class="logo-img-testmonial" src="./images/marquee/12.svg" alt="img">
+                                    <p>"My teammates and I love using Loom; it saved us hundreds of hours by creating
+                                        informative video tutorials instead of one-on-one trainings with customers."</p>
+                                    <div class="testimonial-author">
+                                        <img src="https://cdn.sanity.io/images/pvn35iyy/production/b51f9779f1e1e2422ed56403f6ee9f557e2d5935-400x456.webp?auto=format&w=64&dpr=2"
+                                            alt="Erica Goodell">
+                                        <span>Erica Goodell</span>
+                                        <span>Customer Success, Pearson</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="testimonial-card card-4">
+                                    <img class="logo-img-testmonial" src="./images/marquee/12.svg" alt="img">
+                                    <p>"My teammates and I love using Loom; it saved us hundreds of hours by creating
+                                        informative video tutorials instead of one-on-one trainings with customers."</p>
+                                    <div class="testimonial-author">
+                                        <img src="https://cdn.sanity.io/images/pvn35iyy/production/b51f9779f1e1e2422ed56403f6ee9f557e2d5935-400x456.webp?auto=format&w=64&dpr=2"
+                                            alt="Erica Goodell">
+                                        <span>Erica Goodell</span>
+                                        <span>Customer Success, Pearson</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Carousel Controls -->
+                <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- last section -->
+    <section class="last">
+
+        <div class="content">
+            <h2><span class="highlight">Loom works wherever you do.</span></h2>
+        </div>
+        <div class="button-container">
+            <a href="#" class="button">Get Loom for free</a>
+            <p>For Mac, Windows, iOS, and Android</p>
+        </div>
+
+    </section>
+
+    <!-- Footer  -->
+
+    <footer class="footer">
+        <div class="footer-category product-category">
+            <ul class="product-list">
+                <h2> Product</h2>
+                <li class="product-item">Pricing</li>
+                <li class="product-item">loomSDK</li>
+                <li class="product-item">Screen Recorder</li>
+                <li class="product-item">Chrome Screen Recorder</li>
+                <li class="product-item">Mac Screen Recorder</li>
+                <li class="product-item">Windows Screen Recorder</li>
+                <li class="product-item">iPhone Screen Recorder</li>
+                <li class="product-item">Android Screen Recorder</li>
+            </ul>
+        </div>
+
+        <div class="footer-category use-cases-category">
+            <ul class="use-cases-list">
+                <h2>Use Cases</h2>
+                <li class="use-case-item">Team Alignment</li>
+                <li class="use-case-item">Sales</li>
+                <li class="use-case-item">Engineering</li>
+                <li class="use-case-item">Design</li>
+                <li class="use-case-item">Marketing</li>
+                <li class="use-case-item">Product Management</li>
+                <li class="use-case-item">Support</li>
+                <li class="use-case-item">Education</li>
+            </ul>
+        </div>
+
+        <div class="footer-category business-category">
+            <ul class="business-list">
+                <h2>For Business</h2>
+                <li class="business-item">Loom AI</li>
+                <li class="business-item">Enterprise</li>
+                <li class="business-item">Loom HQ</li>
+                <li class="business-item">Customers</li>
+                <li class="business-item">Security</li>
+                <li class="business-item">Video Hosting</li>
+                <li class="business-item">Video Library</li>
+            </ul>
+        </div>
+
+        <div class="footer-category downloads-category">
+            <ul class="downloads-list">
+                <h2>Downloads</h2>
+                <li class="download-item">Desktop App</li>
+                <li class="download-item">Chrome Extension</li>
+                <li class="download-item">Mobile Apps</li>
+            </ul>
+        </div>
+
+        <div class="footer-category resources-category">
+            <ul class="resources-list">
+                <h2>Resources</h2>
+                <li class="resource-item">Blog</li>
+                <li class="resource-item">Help & Support</li>
+                <li class="resource-item">Community</li>
+                <li class="resource-item">eBooks</li>
+                <li class="resource-item">Status</li>
+                <li class="resource-item">What's New</li>
+                <li class="resource-item">Webcam Mic Test</li>
+                <li class="resource-item">Webcam Recorder</li>
+            </ul>
+        </div>
+
+        <div class="footer-category company-category">
+            <ul class="company-list">
+                <h2>Company</h2>
+                <li class="company-item">About Us</li>
+                <li class="company-item">Diversity, Equity & Inclusion</li>
+                <li class="company-item">Careers</li>
+                <li class="company-item">Newsroom</li>
+                <li class="company-item">Media Kit</li>
+                <li class="company-item">vs Vidyard</li>
+                <li class="company-item">vs Zoom Clips</li>
+                <li class="company-item">Sitemap</li>
+            </ul>
+        </div>
     </footer>
-    <script src="./app.js"></script>
 
+    <!-- Social media -->
+
+    <section class="social">
+        <div class="social-icons">
+            <p>Loom Terms & Policies</p>
+            <a href="https://twitter.com" target="_blank" class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" />
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" />
+            </a>
+            <a href="https://youtube.com" target="_blank" class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube" />
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" />
+            </a>
+            <a href="https://tiktok.com" target="_blank" class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="TikTok" />
+            </a>
+        </div>
+        <div class="social-icons">
+            <svg width="141" height="24" viewBox="0 0 141 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_625_7592)">
+                    <path
+                        d="M5.14441 9.94992C4.89441 9.64992 4.49441 9.69992 4.29441 10.0499L0.0444088 18.5499C-0.105591 18.8999 0.144409 19.2999 0.494409 19.2999H6.39441C6.59441 19.2999 6.74441 19.1999 6.84441 18.9999C8.14441 16.3499 7.34441 12.3499 5.14441 9.94992Z"
+                        fill="url(#paint0_linear_625_7592)"></path>
+                    <path
+                        d="M8.24447 2.2498C5.89447 5.9998 6.04447 10.1498 7.59447 13.2998C9.14447 16.4498 10.3445 18.7998 10.4445 18.9998C10.5445 19.1998 10.6945 19.2998 10.8945 19.2998H16.7945C17.1945 19.2998 17.3945 18.8998 17.2445 18.5498C17.2445 18.5498 9.29447 2.6498 9.09447 2.2498C8.94447 1.8998 8.44447 1.8998 8.24447 2.2498Z"
+                        fill="#0082FF"></path>
+                    <path
+                        d="M77.4943 9.04971C77.4943 11.1497 78.4443 12.7997 82.2943 13.5497C84.5443 14.0497 85.0443 14.3997 85.0443 15.1497C85.0443 15.8997 84.5443 16.3497 82.9443 16.3497C81.0943 16.3497 78.8943 15.6997 77.4443 14.8497V18.2497C78.5943 18.7997 80.0943 19.4497 82.9443 19.4497C86.9443 19.4497 88.4943 17.6497 88.4943 15.0497M88.4943 15.0997C88.4943 12.5997 87.1943 11.4497 83.4443 10.6497C81.3943 10.1997 80.8943 9.74971 80.8943 9.09971C80.8943 8.29971 81.6443 7.94971 82.9943 7.94971C84.6443 7.94971 86.2443 8.44971 87.7943 9.14971V5.89971C86.6943 5.34971 85.0443 4.94971 83.0943 4.94971C79.3943 4.94971 77.4943 6.54971 77.4943 9.14971"
+                        fill="#0050D3"></path>
+                    <path
+                        d="M128.694 5.0498V19.2998H131.744V8.4498L132.994 11.2998L137.294 19.2998H141.094V5.0498H138.094V14.2498L136.944 11.5498L133.494 5.0498H128.694Z"
+                        fill="#0050D3"></path>
+                    <path d="M109.394 5.0498H106.094V19.2998H109.394V5.0498Z" fill="#0050D3"></path>
+                    <path
+                        d="M102.294 15.0499C102.294 12.5499 100.994 11.3999 97.2441 10.5999C95.1941 10.1499 94.6941 9.6999 94.6941 9.0499C94.6941 8.2499 95.4441 7.8999 96.7941 7.8999C98.4441 7.8999 100.044 8.3999 101.594 9.0999V5.8499C100.494 5.2999 98.8441 4.8999 96.8941 4.8999C93.1941 4.8999 91.2941 6.4999 91.2941 9.0999C91.2941 11.1999 92.2441 12.8499 96.0941 13.5999C98.3441 14.0999 98.8441 14.4499 98.8441 15.1999C98.8441 15.9499 98.3441 16.3999 96.7441 16.3999C94.8941 16.3999 92.6941 15.7499 91.2441 14.8999V18.2999C92.3941 18.8499 93.8941 19.4999 96.7441 19.4999C100.694 19.4999 102.294 17.6999 102.294 15.0499Z"
+                        fill="#0050D3"></path>
+                    <path d="M51.7942 5.0498V19.2998H58.5942L59.6442 16.1998H55.0942V5.0498H51.7942Z" fill="#0050D3">
+                    </path>
+                    <path d="M38.3442 5.0498V8.09981H41.9942V19.2998H45.3442V8.09981H49.2942V5.0498H38.3442Z"
+                        fill="#0050D3"></path>
+                    <path
+                        d="M33.4943 5.0498H29.1443L24.1943 19.2998H27.9943L28.6943 16.8998C29.5443 17.1498 30.4443 17.2998 31.3443 17.2998C32.2443 17.2998 33.1443 17.1498 33.9943 16.8998L34.6943 19.2998H38.4943C38.4443 19.2998 33.4943 5.0498 33.4943 5.0498ZM31.2943 14.2998C30.6443 14.2998 30.0443 14.1998 29.4943 14.0498L31.2943 7.8498L33.0943 14.0498C32.5443 14.1998 31.9443 14.2998 31.2943 14.2998Z"
+                        fill="#0050D3"></path>
+                    <path
+                        d="M70.3444 5.0498H65.9944L60.9944 19.2998H64.7944L65.4944 16.8998C66.3444 17.1498 67.2444 17.2998 68.1444 17.2998C69.0444 17.2998 69.9444 17.1498 70.7944 16.8998L71.4944 19.2998H75.2944L70.3444 5.0498ZM68.1444 14.2998C67.4944 14.2998 66.8944 14.1998 66.3444 14.0498L68.1444 7.8498L69.9444 14.0498C69.3944 14.1998 68.7944 14.2998 68.1444 14.2998Z"
+                        fill="#0050D3"></path>
+                    <path
+                        d="M121.344 5.0498H116.994L112.044 19.2998H115.844L116.544 16.8998C117.394 17.1498 118.294 17.2998 119.194 17.2998C120.094 17.2998 120.994 17.1498 121.844 16.8998L122.544 19.2998H126.344L121.344 5.0498ZM119.194 14.2998C118.544 14.2998 117.944 14.1998 117.394 14.0498L119.194 7.8498L120.994 14.0498C120.444 14.1998 119.794 14.2998 119.194 14.2998Z"
+                        fill="#0050D3"></path>
+                </g>
+                <defs>
+                    <linearGradient id="paint0_linear_625_7592" x1="7.45246" y1="11.2776" x2="2.97496" y2="19.0326"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#0050D3"></stop>
+                        <stop offset="0.923" stop-color="#0082FF"></stop>
+                    </linearGradient>
+                    <clipPath id="clip0_625_7592">
+                        <rect width="141" height="24" fill="white"></rect>
+                    </clipPath>
+                </defs>
+            </svg>
+            <span>0 2024, Loom, Inc. All Rights Reserved.</span>
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
